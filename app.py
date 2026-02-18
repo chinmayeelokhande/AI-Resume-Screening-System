@@ -8,6 +8,13 @@ from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import matplotlib.pyplot as plt
 
+@st.cache_resource
+def load_sbert():
+    from sentence_transformers import SentenceTransformer
+    return SentenceTransformer("all-MiniLM-L6-v2")
+
+model = load_sbert()
+
 # ===============================
 # LOAD SBERT MODEL
 # ===============================

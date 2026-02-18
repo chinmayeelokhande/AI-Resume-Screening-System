@@ -6,3 +6,4 @@ pdfplumber
 joblib
 matplotlib
 seaborn
+sentence-transformers
